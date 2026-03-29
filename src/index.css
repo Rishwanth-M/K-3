@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Base Theme */
+body {
+  @apply bg-[#0b0f0f] text-white font-sans scroll-smooth;
+}
+
+/* Background Glow Layers */
+.bg-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,255,170,0.15), transparent);
+  filter: blur(120px);
+  z-index: 0;
+}
+
+/* Section spacing consistency */
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+/* Glass effect */
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+/* Smooth hover */
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(0,255,170,0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #preview-content,
+  #preview-content * {
+    visibility: visible;
+  }
+
+  #preview-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  #preview-content {
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    min-height: auto;
+  }
+}
