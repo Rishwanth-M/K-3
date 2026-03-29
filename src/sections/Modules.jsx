@@ -1,6 +1,6 @@
 import SectionWrapper from "../components/ui/SectionWrapper";
 import Heading from "../components/ui/Heading";
-import boxingImg from "../assets/modules/boxing.jpeg";
+import boxingImg from "../assets/modules/Boxing.jpeg";
 import mudgarImg from "../assets/modules/mudgar.jpeg";
 import mobilityImg from "../assets/modules/mobility.jpeg";
 
