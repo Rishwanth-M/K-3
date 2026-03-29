@@ -44,7 +44,7 @@ if (data) {
     if (!email) return alert("Enter email first");
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: "https://kreedentials.com//reset-password",
+      redirectTo: "https://kreedentialsk-3.vercel.app//reset-password",
     });
 
     if (error) return alert(error.message);
